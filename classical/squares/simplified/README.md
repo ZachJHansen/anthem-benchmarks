@@ -1,0 +1,1 @@
+Command: ./anthem verify --equivalence strong problems/squares/squares.1.lp problems/squares/squares.2.lp  --no-proof-search --save-problems classical/squares/simplified/

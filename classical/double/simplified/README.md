@@ -1,0 +1,1 @@
+Command: ./anthem verify --equivalence strong problems/double/double.1.lp problems/double/double.2.lp  --no-proof-search --save-problems classical/double/simplified/

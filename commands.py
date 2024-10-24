@@ -5,23 +5,33 @@ def generate_se_commands():
     simplify = [True, False]
     #breaking = [True, False]
     #decomposition = ["independent", "sequential"]
-    #se_problems = ["bounds", "choice", "successor", "transitive", "trivial"]
-    #se_problems = ["squares", "double", "lin2"]
-    se_problems = ["strong_primes", "trivial_primes"]
-    se_commands = []
+    se_problems = ["bounds", "choice", "successor", "transitive", "trivial", "squares", "double", "lin2", "strong_primes", "trivial_primes"]
+    nps = " --no-proof-search --save-problems "
     for p in se_problems:
         f1 = "problems/" + p + "/" + p + ".1.lp "
         f2 = "problems/" + p + "/" + p + ".2.lp "
-        c1 = "./anthem verify --equivalence strong " + f1 + f2 + "-t 600 -m 4"
+        #c1 = "./anthem verify --equivalence strong " + f1 + f2 + "-t 600 -m 4"
+
+        odir = "classical/" + p
+        sproc.run("mkdir " + odir, shell=True)
+
+        odir1 = "classical/" + p + "/simplified/"
+        sproc.run("mkdir " + odir1, shell=True)
+
+        odir2 = "classical/" + p + "/unsimplified/"
+        sproc.run("mkdir " + odir2, shell=True)
+
+        c1 = "./anthem verify --equivalence strong " + f1 + f2 + nps
+
         for s in simplify:
             if not s:
-                c = c1 + " --no-simplify"
+                c = c1 + odir1
+                open(odir1 + "/README.md", "w").writelines(["Command: " + c])
             else:
-                c = c1
-            se_commands.append(c)
+                c = c1 + odir2 + " --no-simplify"
+                open(odir2 + "/README.md", "w").writelines(["Command: " + c])
+            sproc.run(c, shell=True)
 
-    for c in se_commands:
-        print(c)
 
 
 def execute(fname):
@@ -40,5 +50,5 @@ def execute(fname):
             print(out.stderr)
         print('\n################################\n')
 
-#generate_se_commands()
-execute("commands.txt")
+generate_se_commands()
+#execute("commands.txt")

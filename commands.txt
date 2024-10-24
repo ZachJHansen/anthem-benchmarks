@@ -1,0 +1,6 @@
+./anthem verify --equivalence strong problems/squares/squares.1.lp problems/squares/squares.2.lp -t 600 -m 4
+./anthem verify --equivalence strong problems/squares/squares.1.lp problems/squares/squares.2.lp -t 600 -m 4 --no-simplify
+./anthem verify --equivalence strong problems/double/double.1.lp problems/double/double.2.lp -t 600 -m 4
+./anthem verify --equivalence strong problems/double/double.1.lp problems/double/double.2.lp -t 600 -m 4 --no-simplify
+./anthem verify --equivalence strong problems/lin2/lin2.1.lp problems/lin2/lin2.2.lp -t 600 -m 4
+./anthem verify --equivalence strong problems/lin2/lin2.1.lp problems/lin2/lin2.2.lp -t 600 -m 4 --no-simplify

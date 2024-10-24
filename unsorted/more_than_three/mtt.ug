@@ -1,3 +1,0 @@
-input: n -> integer.
-output: more_than_three/1.
-assumption: n>=1.

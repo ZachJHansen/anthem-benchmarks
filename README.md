@@ -6,9 +6,8 @@ Please see `summary.xlsx` for an overview.
 Every problem is contained in a directory with a README.md, which contains
 - problem name,
 - problem origin,
-- a set of TPTP problem files,
 - `anthem` command used to generate the problem files,
-- the problem's source files (logic programs, user guides, etc.),
+- the directory name where the source files (logic programs, user guides, etc.) can be found,
 - additional information about branch name, experimental features, etc.
 
 ## Problem Reasoning Types
@@ -24,4 +23,4 @@ Problems are grouped according to their estimated difficulty based on preliminar
 - Level 4 problems should be solvable by an ATP in under 10 minutes when provided a proof outline.
 - Level 5 problems have not yet been solved by anyone in the `anthem` group.
 
-Some problems make multiple appearances across the difficulty levels, depending on the command used to generate the problems. For instance, variants of the `primes` problem are much easier for `vampire` when `anthem`'s custom simplifications.
+Some problems make multiple appearances across the difficulty levels, depending on the command used to generate the problems. For instance, variants of the `primes` problem are much easier for `vampire` when `anthem`'s custom simplifications are used.

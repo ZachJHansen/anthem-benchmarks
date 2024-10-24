@@ -1,0 +1,3 @@
+input: n -> integer.
+output: q/1.
+assumption: n >= 0.

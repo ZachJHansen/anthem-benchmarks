@@ -1,0 +1,14 @@
+definition:
+forall W (a(W) <-> ( forall X Y (in0(X,Y) -> person(X)) ) ).
+definition:
+forall W (b(W) <-> ( forall X Y Z (goto(X,Y,Z) -> person(X))) ).
+definition:
+forall W (c(W) <-> ( forall X Y Z (in(X,Y,Z) -> person(X))) ).
+
+lemma (backward):
+forall W (
+a(W) and b(W) and c(W) -> (
+ forall V1 V2 V3 (in(V1, V2, V3) <- exists I$i K1$i XR XT (V2 = XR and V3 = 0 and in0(V1, XR) or V3 = I$i + 1 and I$i = XT and goto(V1, V2, XT) or V3 = K1$i + 1 and in(V1, V2, K1$i) and not go(V1, K1$i) and 0
+<= K1$i <= h$i - 1))
+                 )
+         ).

@@ -1,0 +1,8 @@
+lemma:
+div(N$,D$,Q$,R$) and R$ < D$-1 -> div(N$+1,D$,Q$,R$+1).
+
+lemma:
+div(N$,D$,Q$,D$-1) -> div(N$+1,D$,Q$+1,0).
+
+inductive-lemma:
+forall N$ (N$ >= 0 -> (D$ > 0 -> exists Q$ R$ div(N$,D$,Q$,R$))).

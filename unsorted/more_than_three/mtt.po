@@ -1,0 +1,28 @@
+definition:
+forall I$ N$ (sqrt(I$,N$) <-> I$ >= 0 and I$*I$ <= N$ < (I$+1)*(I$+1)).
+
+% needed for inductive step below
+lemma:
+sqrt(I$,N$) and (I$+1)*(I$+1) <= N$+1 -> sqrt(I$+1,N$+1).
+
+inductive-lemma:
+N$ >= 0 -> exists I$ sqrt(I$,N$).
+
+% show the square root of n exists
+lemma:
+exists N$ sqrt(N$).
+
+% square is monotonically increasing - seems to be needed for the next lemma
+lemma:
+forall N1$ N2$ (N1$ >= 1 and N2$ >= 1 and N1$ < N2$ -> N1$ * N1$ < N2$ * N2$).
+
+% the square root I of X is the largest number J s.t. J*J <= X
+lemma: forall I$ J$ X (I$>=0 and I$*I$<=X and (I$+1)*(I$+1)>X and J$*J$<=X and J$>=0 -> J$ <= I$).
+
+% apply the 'largest number' lemma above to X=n
+lemma:
+forall J$ N$ (J$*J$ <= n and sqrt(I$) -> J$ <= I$).
+
+% finally show we can limit the range of I J K to sqrt n
+lemma:
+forall X I$ J$ K$ N$ (X = I$*I$ + J$*J$ + K$*K$ and X <= n and sqrt(N$) -> I$ <= N$ and J$ <= N$ and K$ <= N$).

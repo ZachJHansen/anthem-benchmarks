@@ -1,0 +1,1 @@
+Command: ./anthem verify --equivalence intuitionistic --formula-representation tau-star problems/squares/squares.1.lp problems/squares/squares.2.lp  --no-proof-search --save-problems intuitionistic/squares/unsimplified/ --no-simplify

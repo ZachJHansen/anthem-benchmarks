@@ -1,0 +1,1 @@
+Command: ./anthem verify --equivalence intuitionistic --formula-representation tau-star problems/trivial/trivial.1.lp problems/trivial/trivial.2.lp  --no-proof-search --save-problems intuitionistic/trivial/unsimplified/ --no-simplify

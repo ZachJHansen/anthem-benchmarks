@@ -1,0 +1,1 @@
+Command: ./anthem verify --equivalence intuitionistic --formula-representation shorthand problems/transitive/transitive.1.lp problems/transitive/transitive.2.lp  --no-proof-search --save-problems intuitionistic/transitive/unsimplified/ --no-simplify

@@ -1,0 +1,1 @@
+Command: ./anthem verify --equivalence intuitionistic --formula-representation shorthand problems/lin2/lin2.1.lp problems/lin2/lin2.2.lp  --no-proof-search --save-problems intuitionistic/lin2/unsimplified/ --no-simplify

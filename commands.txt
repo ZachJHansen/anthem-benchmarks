@@ -1,6 +1,80 @@
+./anthem verify --equivalence strong problems/bounds/bounds.1.lp problems/bounds/bounds.2.lp -t 600 -m 4
+./anthem verify --equivalence strong problems/bounds/bounds.1.lp problems/bounds/bounds.2.lp -t 600 -m 4 --no-eq-break
+./anthem verify --equivalence strong problems/bounds/bounds.1.lp problems/bounds/bounds.2.lp -t 600 -m 4 --no-simplify
+./anthem verify --equivalence strong problems/bounds/bounds.1.lp problems/bounds/bounds.2.lp -t 600 -m 4 --no-simplify --no-eq-break
+./anthem verify --equivalence strong problems/choice/choice.1.lp problems/choice/choice.2.lp -t 600 -m 4
+./anthem verify --equivalence strong problems/choice/choice.1.lp problems/choice/choice.2.lp -t 600 -m 4 --no-eq-break
+./anthem verify --equivalence strong problems/choice/choice.1.lp problems/choice/choice.2.lp -t 600 -m 4 --no-simplify
+./anthem verify --equivalence strong problems/choice/choice.1.lp problems/choice/choice.2.lp -t 600 -m 4 --no-simplify --no-eq-break
+./anthem verify --equivalence strong problems/successor/successor.1.lp problems/successor/successor.2.lp -t 600 -m 4
+./anthem verify --equivalence strong problems/successor/successor.1.lp problems/successor/successor.2.lp -t 600 -m 4 --no-eq-break
+./anthem verify --equivalence strong problems/successor/successor.1.lp problems/successor/successor.2.lp -t 600 -m 4 --no-simplify
+./anthem verify --equivalence strong problems/successor/successor.1.lp problems/successor/successor.2.lp -t 600 -m 4 --no-simplify --no-eq-break
+./anthem verify --equivalence strong problems/transitive/transitive.1.lp problems/transitive/transitive.2.lp -t 600 -m 4
+./anthem verify --equivalence strong problems/transitive/transitive.1.lp problems/transitive/transitive.2.lp -t 600 -m 4 --no-eq-break
+./anthem verify --equivalence strong problems/transitive/transitive.1.lp problems/transitive/transitive.2.lp -t 600 -m 4 --no-simplify
+./anthem verify --equivalence strong problems/transitive/transitive.1.lp problems/transitive/transitive.2.lp -t 600 -m 4 --no-simplify --no-eq-break
+./anthem verify --equivalence strong problems/trivial/trivial.1.lp problems/trivial/trivial.2.lp -t 600 -m 4
+./anthem verify --equivalence strong problems/trivial/trivial.1.lp problems/trivial/trivial.2.lp -t 600 -m 4 --no-eq-break
+./anthem verify --equivalence strong problems/trivial/trivial.1.lp problems/trivial/trivial.2.lp -t 600 -m 4 --no-simplify
+./anthem verify --equivalence strong problems/trivial/trivial.1.lp problems/trivial/trivial.2.lp -t 600 -m 4 --no-simplify --no-eq-break
 ./anthem verify --equivalence strong problems/squares/squares.1.lp problems/squares/squares.2.lp -t 600 -m 4
+./anthem verify --equivalence strong problems/squares/squares.1.lp problems/squares/squares.2.lp -t 600 -m 4 --no-eq-break
 ./anthem verify --equivalence strong problems/squares/squares.1.lp problems/squares/squares.2.lp -t 600 -m 4 --no-simplify
+./anthem verify --equivalence strong problems/squares/squares.1.lp problems/squares/squares.2.lp -t 600 -m 4 --no-simplify --no-eq-break
 ./anthem verify --equivalence strong problems/double/double.1.lp problems/double/double.2.lp -t 600 -m 4
+./anthem verify --equivalence strong problems/double/double.1.lp problems/double/double.2.lp -t 600 -m 4 --no-eq-break
 ./anthem verify --equivalence strong problems/double/double.1.lp problems/double/double.2.lp -t 600 -m 4 --no-simplify
+./anthem verify --equivalence strong problems/double/double.1.lp problems/double/double.2.lp -t 600 -m 4 --no-simplify --no-eq-break
 ./anthem verify --equivalence strong problems/lin2/lin2.1.lp problems/lin2/lin2.2.lp -t 600 -m 4
+./anthem verify --equivalence strong problems/lin2/lin2.1.lp problems/lin2/lin2.2.lp -t 600 -m 4 --no-eq-break
 ./anthem verify --equivalence strong problems/lin2/lin2.1.lp problems/lin2/lin2.2.lp -t 600 -m 4 --no-simplify
+./anthem verify --equivalence strong problems/lin2/lin2.1.lp problems/lin2/lin2.2.lp -t 600 -m 4 --no-simplify --no-eq-break
+./anthem verify --equivalence strong problems/strong_primes/strong_primes.1.lp problems/strong_primes/strong_primes.2.lp -t 600 -m 4
+./anthem verify --equivalence strong problems/strong_primes/strong_primes.1.lp problems/strong_primes/strong_primes.2.lp -t 600 -m 4 --no-eq-break
+./anthem verify --equivalence strong problems/strong_primes/strong_primes.1.lp problems/strong_primes/strong_primes.2.lp -t 600 -m 4 --no-simplify
+./anthem verify --equivalence strong problems/strong_primes/strong_primes.1.lp problems/strong_primes/strong_primes.2.lp -t 600 -m 4 --no-simplify --no-eq-break
+./anthem verify --equivalence strong problems/trivial_primes/trivial_primes.1.lp problems/trivial_primes/trivial_primes.2.lp -t 600 -m 4
+./anthem verify --equivalence strong problems/trivial_primes/trivial_primes.1.lp problems/trivial_primes/trivial_primes.2.lp -t 600 -m 4 --no-eq-break
+./anthem verify --equivalence strong problems/trivial_primes/trivial_primes.1.lp problems/trivial_primes/trivial_primes.2.lp -t 600 -m 4 --no-simplify
+./anthem verify --equivalence strong problems/trivial_primes/trivial_primes.1.lp problems/trivial_primes/trivial_primes.2.lp -t 600 -m 4 --no-simplify --no-eq-break
+./anthem verify --equivalence external problems/coloring/coloring.lp problems/coloring/coloring.spec problems/coloring/coloring.ug -t 600 -m 4
+./anthem verify --equivalence external problems/coloring/coloring.lp problems/coloring/coloring.spec problems/coloring/coloring.ug -t 600 -m 4 --no-eq-break
+./anthem verify --equivalence external problems/coloring/coloring.lp problems/coloring/coloring.spec problems/coloring/coloring.ug -t 600 -m 4 --no-simplify
+./anthem verify --equivalence external problems/coloring/coloring.lp problems/coloring/coloring.spec problems/coloring/coloring.ug -t 600 -m 4 --no-simplify --no-eq-break
+./anthem verify --equivalence external problems/cover-p2s/cover-p2s.lp problems/cover-p2s/cover-p2s.spec problems/cover-p2s/cover-p2s.ug -t 600 -m 4
+./anthem verify --equivalence external problems/cover-p2s/cover-p2s.lp problems/cover-p2s/cover-p2s.spec problems/cover-p2s/cover-p2s.ug -t 600 -m 4 --no-eq-break
+./anthem verify --equivalence external problems/cover-p2s/cover-p2s.lp problems/cover-p2s/cover-p2s.spec problems/cover-p2s/cover-p2s.ug -t 600 -m 4 --no-simplify
+./anthem verify --equivalence external problems/cover-p2s/cover-p2s.lp problems/cover-p2s/cover-p2s.spec problems/cover-p2s/cover-p2s.ug -t 600 -m 4 --no-simplify --no-eq-break
+./anthem verify --equivalence external --direction backward problems/div/div.lp problems/div/div.spec problems/div/div.ug problems/div/div.po -t 600 -m 4
+./anthem verify --equivalence external --direction backward problems/div/div.lp problems/div/div.spec problems/div/div.ug problems/div/div.po -t 600 -m 4 --no-eq-break
+./anthem verify --equivalence external --direction backward problems/div/div.lp problems/div/div.spec problems/div/div.ug problems/div/div.po -t 600 -m 4 --no-simplify
+./anthem verify --equivalence external --direction backward problems/div/div.lp problems/div/div.spec problems/div/div.ug problems/div/div.po -t 600 -m 4 --no-simplify --no-eq-break
+./anthem verify --equivalence external problems/floor/floor.lp problems/floor/floor.spec problems/floor/floor.ug -t 600 -m 4
+./anthem verify --equivalence external problems/floor/floor.lp problems/floor/floor.spec problems/floor/floor.ug -t 600 -m 4 --no-eq-break
+./anthem verify --equivalence external problems/floor/floor.lp problems/floor/floor.spec problems/floor/floor.ug -t 600 -m 4 --no-simplify
+./anthem verify --equivalence external problems/floor/floor.lp problems/floor/floor.spec problems/floor/floor.ug -t 600 -m 4 --no-simplify --no-eq-break
+./anthem verify --equivalence external problems/cover-p2p/cover-p2p.1.lp problems/cover-p2p/cover-p2p.2.lp problems/cover-p2p/cover-p2p.ug -t 600 -m 4
+./anthem verify --equivalence external problems/cover-p2p/cover-p2p.1.lp problems/cover-p2p/cover-p2p.2.lp problems/cover-p2p/cover-p2p.ug -t 600 -m 4 --no-eq-break
+./anthem verify --equivalence external problems/cover-p2p/cover-p2p.1.lp problems/cover-p2p/cover-p2p.2.lp problems/cover-p2p/cover-p2p.ug -t 600 -m 4 --no-simplify
+./anthem verify --equivalence external problems/cover-p2p/cover-p2p.1.lp problems/cover-p2p/cover-p2p.2.lp problems/cover-p2p/cover-p2p.ug -t 600 -m 4 --no-simplify --no-eq-break
+./anthem verify --equivalence external --bypass-tightness problems/frame/frame.1.lp problems/frame/frame.2.lp problems/frame/frame.ug problems/frame/frame.po -t 600 -m 4
+./anthem verify --equivalence external --bypass-tightness problems/frame/frame.1.lp problems/frame/frame.2.lp problems/frame/frame.ug problems/frame/frame.po -t 600 -m 4 --no-eq-break
+./anthem verify --equivalence external --bypass-tightness problems/frame/frame.1.lp problems/frame/frame.2.lp problems/frame/frame.ug problems/frame/frame.po -t 600 -m 4 --no-simplify
+./anthem verify --equivalence external --bypass-tightness problems/frame/frame.1.lp problems/frame/frame.2.lp problems/frame/frame.ug problems/frame/frame.po -t 600 -m 4 --no-simplify --no-eq-break
+./anthem verify --equivalence external problems/more_than_three/more_than_three.1.lp problems/more_than_three/more_than_three.2.lp problems/more_than_three/more_than_three.ug -t 600 -m 4
+./anthem verify --equivalence external problems/more_than_three/more_than_three.1.lp problems/more_than_three/more_than_three.2.lp problems/more_than_three/more_than_three.ug -t 600 -m 4 --no-eq-break
+./anthem verify --equivalence external problems/more_than_three/more_than_three.1.lp problems/more_than_three/more_than_three.2.lp problems/more_than_three/more_than_three.ug -t 600 -m 4 --no-simplify
+./anthem verify --equivalence external problems/more_than_three/more_than_three.1.lp problems/more_than_three/more_than_three.2.lp problems/more_than_three/more_than_three.ug -t 600 -m 4 --no-simplify --no-eq-break
+./anthem verify --equivalence external problems/placeholder_squares/placeholder_squares.1.lp problems/placeholder_squares/placeholder_squares.2.lp problems/placeholder_squares/placeholder_squares.ug -t 600 -m 4
+./anthem verify --equivalence external problems/placeholder_squares/placeholder_squares.1.lp problems/placeholder_squares/placeholder_squares.2.lp problems/placeholder_squares/placeholder_squares.ug -t 600 -m 4 --no-eq-break
+./anthem verify --equivalence external problems/placeholder_squares/placeholder_squares.1.lp problems/placeholder_squares/placeholder_squares.2.lp problems/placeholder_squares/placeholder_squares.ug -t 600 -m 4 --no-simplify
+./anthem verify --equivalence external problems/placeholder_squares/placeholder_squares.1.lp problems/placeholder_squares/placeholder_squares.2.lp problems/placeholder_squares/placeholder_squares.ug -t 600 -m 4 --no-simplify --no-eq-break
+./anthem verify --equivalence external problems/primes/primes.1.lp problems/primes/primes.2.lp problems/primes/primes.ug -t 600 -m 4
+./anthem verify --equivalence external problems/primes/primes.1.lp problems/primes/primes.2.lp problems/primes/primes.ug -t 600 -m 4 --no-eq-break
+./anthem verify --equivalence external problems/primes/primes.1.lp problems/primes/primes.2.lp problems/primes/primes.ug -t 600 -m 4 --no-simplify
+./anthem verify --equivalence external problems/primes/primes.1.lp problems/primes/primes.2.lp problems/primes/primes.ug -t 600 -m 4 --no-simplify --no-eq-break
+./anthem verify --equivalence external problems/optimized_primes/optimized_primes.1.lp problems/optimized_primes/optimized_primes.2.lp problems/optimized_primes/optimized_primes.ug problems/optimized_primes/optimized_primes.po -t 600 -m 4
+./anthem verify --equivalence external problems/optimized_primes/optimized_primes.1.lp problems/optimized_primes/optimized_primes.2.lp problems/optimized_primes/optimized_primes.ug problems/optimized_primes/optimized_primes.po -t 600 -m 4 --no-eq-break
+./anthem verify --equivalence external problems/optimized_primes/optimized_primes.1.lp problems/optimized_primes/optimized_primes.2.lp problems/optimized_primes/optimized_primes.ug problems/optimized_primes/optimized_primes.po -t 600 -m 4 --no-simplify
+./anthem verify --equivalence external problems/optimized_primes/optimized_primes.1.lp problems/optimized_primes/optimized_primes.2.lp problems/optimized_primes/optimized_primes.ug problems/optimized_primes/optimized_primes.po -t 600 -m 4 --no-simplify --no-eq-break

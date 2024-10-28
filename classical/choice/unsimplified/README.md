@@ -1,1 +1,1 @@
-Command: ./anthem verify --equivalence strong problems/choice/choice.1.lp problems/choice/choice.2.lp  --no-proof-search --save-problems classical/choice/unsimplified/ --no-simplify
+Command: ./anthem verify --equivalence strong problems/choice/choice.1.lp problems/choice/choice.2.lp  --no-eq-break --no-proof-search --save-problems classical/choice/unsimplified/ --no-simplify

@@ -1,1 +1,1 @@
-Command: ./anthem verify --equivalence intuitionistic --formula-representation tau-star problems/bounds/bounds.1.lp problems/bounds/bounds.2.lp  --no-proof-search --save-problems intuitionistic/bounds/unsimplified/ --no-simplify
+Command: ./anthem verify --equivalence intuitionistic --formula-representation tau-star problems/bounds/bounds.1.lp problems/bounds/bounds.2.lp  --no-eq-break --no-proof-search --save-problems intuitionistic/bounds/unsimplified/ --no-simplify

@@ -1,0 +1,1 @@
+Command: ./anthem verify --equivalence external problems/more_than_three/more_than_three.1.lp problems/more_than_three/more_than_three.2.lp problems/more_than_three/more_than_three.ug  --no-eq-break --no-proof-search --save-problems classical/more_than_three/unsimplified/ --no-simplify

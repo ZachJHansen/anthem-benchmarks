@@ -1,0 +1,1 @@
+Command: ./anthem verify --equivalence external problems/coloring/coloring.lp problems/coloring/coloring.spec problems/coloring/coloring.ug  --no-eq-break --no-proof-search --save-problems classical/coloring/unsimplified/ --no-simplify

@@ -1,1 +1,1 @@
-Command: ./anthem verify --equivalence strong problems/lin2/lin2.1.lp problems/lin2/lin2.2.lp  --no-proof-search --save-problems classical/lin2/unsimplified/ --no-simplify
+Command: ./anthem verify --equivalence strong problems/lin2/lin2.1.lp problems/lin2/lin2.2.lp  --no-eq-break --no-proof-search --save-problems classical/lin2/unsimplified/ --no-simplify

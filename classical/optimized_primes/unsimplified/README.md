@@ -1,0 +1,1 @@
+Command: ./anthem verify --equivalence external problems/optimized_primes/optimized_primes.1.lp problems/optimized_primes/optimized_primes.2.lp problems/optimized_primes/optimized_primes.ug  --no-eq-break --no-proof-search --save-problems classical/optimized_primes/unsimplified/ --no-simplify

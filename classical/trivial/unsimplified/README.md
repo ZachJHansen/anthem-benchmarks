@@ -1,1 +1,1 @@
-Command: ./anthem verify --equivalence strong problems/trivial/trivial.1.lp problems/trivial/trivial.2.lp  --no-proof-search --save-problems classical/trivial/unsimplified/ --no-simplify
+Command: ./anthem verify --equivalence strong problems/trivial/trivial.1.lp problems/trivial/trivial.2.lp  --no-eq-break --no-proof-search --save-problems classical/trivial/unsimplified/ --no-simplify

@@ -19,12 +19,12 @@ def populate_out_dirs(command, odir1, odir2, nontight):
             c = command + odir1
             if nontight:
                 c = c + " --bypass-tightness"
-            open(odir1 + "/README.md", "w").writelines(["Command: " + c])
+            open(odir1 + "README.md", "w").writelines(["Command: " + c])
         else:
             c = command + odir2 + " --no-simplify"
             if nontight:
                 c = c + " --bypass-tightness"
-            open(odir2 + "/README.md", "w").writelines(["Command: " + c])
+            open(odir2 + "README.md", "w").writelines(["Command: " + c])
         sproc.run(c, shell=True)
 
 def generate_classical_ee_tptp():
@@ -37,7 +37,7 @@ def generate_classical_ee_tptp():
         f2 = "problems/" + p + "/" + p + ".2.lp "
         f3 = "problems/" + p + "/" + p + ".ug "
         command = "./anthem verify --equivalence external " + f1 + f2 + f3 + nps
-        odir1, ordir2 = create_out_dirs("classical", p)
+        odir1, odir2 = create_out_dirs("classical", p)
         populate_out_dirs(command, odir1, odir2, (p in nontight))
 
     p2s_problems = ["cover-p2s", "coloring", "floor"]
@@ -46,15 +46,15 @@ def generate_classical_ee_tptp():
         f2 = "problems/" + p + "/" + p + ".spec "
         f3 = "problems/" + p + "/" + p + ".ug "
         command = "./anthem verify --equivalence external " + f1 + f2 + f3 + nps
-        odir1, ordir2 = create_out_dirs("classical", p)
+        odir1, odir2 = create_out_dirs("classical", p)
         populate_out_dirs(command, odir1, odir2, (p in nontight))
 
     p = "div"
     f1 = "problems/" + p + "/" + p + ".lp "
     f2 = "problems/" + p + "/" + p + ".spec "
     f3 = "problems/" + p + "/" + p + ".ug "
-    command = "./anthem verify --equivalence external --direction backward" + f1 + f2 + f3 + nps
-    odir1, ordir2 = create_out_dirs("classical", p)
+    command = "./anthem verify --equivalence external --direction backward " + f1 + f2 + f3 + nps
+    odir1, odir2 = create_out_dirs("classical", p)
     populate_out_dirs(command, odir1, odir2, False)
 
 def generate_classical_se_tptp():
@@ -65,7 +65,7 @@ def generate_classical_se_tptp():
         f1 = "problems/" + p + "/" + p + ".1.lp "
         f2 = "problems/" + p + "/" + p + ".2.lp "
         command = "./anthem verify --equivalence strong " + f1 + f2 + nps
-        odir1, ordir2 = create_out_dirs("classical", p)
+        odir1, odir2 = create_out_dirs("classical", p)
         populate_out_dirs(command, odir1, odir2, False)
 
 def generate_intuitionistic_tptp():
@@ -76,7 +76,7 @@ def generate_intuitionistic_tptp():
         f1 = "problems/" + p + "/" + p + ".1.lp "
         f2 = "problems/" + p + "/" + p + ".2.lp "
         command = "./anthem verify --equivalence intuitionistic --formula-representation shorthand " + f1 + f2 + nps
-        odir1, ordir2 = create_out_dirs("intuitionistic", p)
+        odir1, odir2 = create_out_dirs("intuitionistic", p)
         populate_out_dirs(command, odir1, odir2, False)
 
     tau_star_problems = ["bounds", "successor", "trivial", "squares", "double", "strong_primes", "trivial_primes"]
@@ -84,9 +84,9 @@ def generate_intuitionistic_tptp():
         f1 = "problems/" + p + "/" + p + ".1.lp "
         f2 = "problems/" + p + "/" + p + ".2.lp "
         command = "./anthem verify --equivalence intuitionistic --formula-representation tau-star " + f1 + f2 + nps
-        odir1, ordir2 = create_out_dirs("intuitionistic", p)
+        odir1, odir2 = create_out_dirs("intuitionistic", p)
         populate_out_dirs(command, odir1, odir2, False)
 
-generate_intuitionistic_tptp()
-generate_classical_se_tptp()
+#generate_intuitionistic_tptp()
+#generate_classical_se_tptp()
 generate_classical_ee_tptp()

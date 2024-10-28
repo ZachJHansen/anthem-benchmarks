@@ -1,1 +1,1 @@
-Command: ./anthem verify --equivalence intuitionistic --formula-representation tau-star problems/trivial_primes/trivial_primes.1.lp problems/trivial_primes/trivial_primes.2.lp  --no-proof-search --save-problems intuitionistic/trivial_primes/unsimplified/ --no-simplify
+Command: ./anthem verify --equivalence intuitionistic --formula-representation tau-star problems/trivial_primes/trivial_primes.1.lp problems/trivial_primes/trivial_primes.2.lp  --no-eq-break --no-proof-search --save-problems intuitionistic/trivial_primes/unsimplified/ --no-simplify

@@ -1,0 +1,1 @@
+Command: ./anthem verify --equivalence external problems/cover-p2p/cover-p2p.1.lp problems/cover-p2p/cover-p2p.2.lp problems/cover-p2p/cover-p2p.ug  --no-eq-break --no-proof-search --save-problems classical/cover-p2p/simplified/

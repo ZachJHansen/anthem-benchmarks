@@ -1,1 +1,1 @@
-Command: ./anthem verify --equivalence strong problems/trivial_primes/trivial_primes.1.lp problems/trivial_primes/trivial_primes.2.lp  --no-proof-search --save-problems classical/trivial_primes/unsimplified/ --no-simplify
+Command: ./anthem verify --equivalence strong problems/trivial_primes/trivial_primes.1.lp problems/trivial_primes/trivial_primes.2.lp  --no-eq-break --no-proof-search --save-problems classical/trivial_primes/unsimplified/ --no-simplify

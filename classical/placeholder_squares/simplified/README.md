@@ -1,0 +1,1 @@
+Command: ./anthem verify --equivalence external problems/placeholder_squares/placeholder_squares.1.lp problems/placeholder_squares/placeholder_squares.2.lp problems/placeholder_squares/placeholder_squares.ug  --no-eq-break --no-proof-search --save-problems classical/placeholder_squares/simplified/

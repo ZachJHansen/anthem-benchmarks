@@ -1,1 +1,1 @@
-Command: ./anthem verify --equivalence intuitionistic --formula-representation shorthand problems/choice/choice.1.lp problems/choice/choice.2.lp  --no-proof-search --save-problems intuitionistic/choice/simplified/
+Command: ./anthem verify --equivalence intuitionistic --formula-representation shorthand problems/choice/choice.1.lp problems/choice/choice.2.lp  --no-eq-break --no-proof-search --save-problems intuitionistic/choice/simplified/

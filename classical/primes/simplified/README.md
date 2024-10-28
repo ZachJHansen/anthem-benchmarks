@@ -1,0 +1,1 @@
+Command: ./anthem verify --equivalence external problems/primes/primes.1.lp problems/primes/primes.2.lp problems/primes/primes.ug  --no-eq-break --no-proof-search --save-problems classical/primes/simplified/

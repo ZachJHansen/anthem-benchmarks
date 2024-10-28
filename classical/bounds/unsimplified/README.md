@@ -1,1 +1,1 @@
-Command: ./anthem verify --equivalence strong problems/bounds/bounds.1.lp problems/bounds/bounds.2.lp  --no-proof-search --save-problems classical/bounds/unsimplified/ --no-simplify
+Command: ./anthem verify --equivalence strong problems/bounds/bounds.1.lp problems/bounds/bounds.2.lp  --no-eq-break --no-proof-search --save-problems classical/bounds/unsimplified/ --no-simplify

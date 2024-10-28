@@ -1,2 +1,0 @@
-/home/zachh/Desktop/anthem-benchmarks/commands.py:27: SyntaxWarning: invalid escape sequence '\('
-  pattern = re.compile("> Success! .* equivalence. \([0-9]+ ms\)|> Failure! .* equivalence. \([0-9]+ ms\)")

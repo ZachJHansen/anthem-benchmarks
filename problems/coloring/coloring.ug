@@ -1,0 +1,4 @@
+input: vertex/1.
+input: edge/2.
+input: color/1.
+output: color/2.

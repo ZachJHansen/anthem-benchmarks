@@ -1,7 +1,7 @@
-in(XP,XR,0) :- in0(XP,XR).
-in(XP,XR,XT+1) :- goto(XP,XR,XT).
-go(XP,XT) :- goto(XP,XR,XT).
-in(XP,XR,XT+1) :- in(XP,XR,XT), not go(XP,XT), XT = 0..h-1.
-:- in(XP,XR1,XT), in(XP,XR2,XT), XR1 != XR2.
-in_building(XP,XT) :- in(XP,XR,XT).
-:- not in_building(XP,XT), person(XP), XT = 0..h.
+in(P,R,0) :- in0(P,R).
+in(P,R,T+1) :- goto(P,R,T).
+go(P,T) :- goto(P,R,T).
+in(P,R,T+1) :- in(P,R,T), not go(P,T), T = 0..h-1.
+:- in(P,R1,T), in(P,R2,T), R1 != R2.
+in_building(P,T) :- in(P,R,T).
+:- not in_building(P,T), person(P), T = 0..h.

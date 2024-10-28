@@ -1,6 +1,6 @@
 index_2(1..8).
 type_2(1..3).
-{place_2(X,Y,XT) : type_2(XT)} :- index_2(X), index_2(Y).
+{place_2(X,Y,XT)} :- index_2(X), index_2(Y), type_2(XT).
 :- place_2(X,Y,XT1), place_2(X,Y,XT2), index_2(X), index_2(Y), type_2(XT1), type_2(XT2), XT1 != XT2.
 :- place_2(X1,Y1,1), place_2(X2,Y2,1), X1 != X2.
 :- place_2(X1,Y1,1), place_2(X2,Y2,1), Y1 != Y2.

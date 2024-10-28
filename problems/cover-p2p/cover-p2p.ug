@@ -1,0 +1,6 @@
+input: n -> integer.
+input: s/2.
+
+output: in_cover/1.
+
+assumption: n >= 0.

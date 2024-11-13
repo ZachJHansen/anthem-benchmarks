@@ -29,7 +29,7 @@ Problems are labeled according to their estimated difficulty based on preliminar
 - Level 2 problems should be solvable by an ATP with T=10 minutes without a proof outline.
 - Level 3 problems should be solvable by an ATP with T=1 minute when tested with the provided proof outline.
 - Level 4 problems should be solvable by an ATP with T=10 minutes when tested with the provided proof outline.
-- Level 5 problems timed out (T=10 minutes) even with the provided proof outline.
+- Level 5 problems timed out (T=10 minutes) even with the provided proof outline. With such problems it is hard to say how difficult they really are. They might be trivial if we found the right proof outline.
 
 Some problems make multiple appearances across the difficulty levels, depending on the command used to generate the problems. For instance, variants of the `primes` problem are much easier for `vampire` when `anthem`'s custom simplifications are used.
 

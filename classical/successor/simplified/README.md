@@ -1,1 +1,0 @@
-Command: ./anthem verify --equivalence strong problems/successor/successor.1.lp problems/successor/successor.2.lp  --no-eq-break --no-proof-search --save-problems classical/successor/simplified/

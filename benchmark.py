@@ -14,11 +14,11 @@ def generate_se_commands():
 
         for simplify in [True, False]:
             if simplify:
-                commands.append(c)
+                #commands.append(c)
                 commands.append(c + " --no-eq-break")
             else:
                 c = c + " --no-simplify"
-                commands.append(c)
+                #commands.append(c)
                 commands.append(c + " --no-eq-break")
 
     for c in commands:
@@ -61,11 +61,11 @@ def generate_ee_commands():
 
         for simplify in [True, False]:
             if simplify:
-                commands.append(c)
+                #commands.append(c)
                 commands.append(c + " --no-eq-break")
             else:
                 c = c + " --no-simplify"
-                commands.append(c)
+                #commands.append(c)
                 commands.append(c + " --no-eq-break")
 
     for c in commands:
@@ -89,6 +89,6 @@ def execute(fname):
 
 
 
-generate_se_commands()
-generate_ee_commands()
-#execute("commands.txt")
+#generate_se_commands()
+#generate_ee_commands()
+execute("ee_commands.txt")

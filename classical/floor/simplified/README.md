@@ -1,1 +1,0 @@
-Command: ./anthem verify --equivalence external problems/floor/floor.lp problems/floor/floor.spec problems/floor/floor.ug  --no-eq-break --no-proof-search --save-problems classical/floor/simplified/

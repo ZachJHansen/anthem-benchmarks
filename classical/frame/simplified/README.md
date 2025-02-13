@@ -1,1 +1,0 @@
-Command: ./anthem verify --equivalence external problems/frame/frame.1.lp problems/frame/frame.2.lp problems/frame/frame.ug  --no-eq-break --no-proof-search --save-problems classical/frame/simplified/ --bypass-tightness

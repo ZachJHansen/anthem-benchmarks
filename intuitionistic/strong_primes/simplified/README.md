@@ -1,1 +1,0 @@
-Command: ./anthem verify --equivalence intuitionistic --formula-representation tau-star problems/strong_primes/strong_primes.1.lp problems/strong_primes/strong_primes.2.lp  --no-eq-break --no-proof-search --save-problems intuitionistic/strong_primes/simplified/

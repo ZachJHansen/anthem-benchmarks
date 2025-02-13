@@ -1,2 +1,0 @@
-./anthem verify --equivalence strong problems/squares/squares.1.lp problems/squares/squares.2.lp -t 600 -m 4 --no-eq-break
-./anthem verify --equivalence strong problems/squares/squares.1.lp problems/squares/squares.2.lp -t 600 -m 4 --no-simplify --no-eq-break

@@ -1,1 +1,8 @@
-./anthem verify --equivalence strong problems/bounds/bounds.1.lp problems/bounds/bounds.2.lp --no-proof-search --save-problems classical/ --problem-name SWV000 --no-simplify
+./anthem verify --equivalence strong problems/bounds/bounds.1.lp problems/bounds/bounds.2.lp --no-proof-search --save-problems classical/ --no-eq-break --problem-name SWV000 --no-simplify
+    000 - 001
+
+./anthem verify --equivalence strong problems/choice/choice.1.lp problems/choice/choice.2.lp --no-proof-search --save-problems classical/ --no-eq-break --problem-name SWV002 --no-simplify
+    002 - 003
+
+./anthem verify --equivalence external problems/coloring/coloring.{lp,spec,ug} --no-proof-search --save-problems classical/ --no-eq-break --problem-name SWV004 --no-simplify
+    004 - 008

@@ -70,3 +70,6 @@
 
 ./anthem verify --equivalence external problems/primes/primes.{1.lp,2.lp,ug} --no-proof-search --save-problems classical/ --no-eq-break --problem-name SWV091 --no-simplify
     091 - 092
+
+./anthem verify --equivalence strong problems/transitive/transitive.{1.lp,2.lp} --no-proof-search --save-problems classical/ --no-eq-break --problem-name SWV093 --no-simplify
+    093 - 095

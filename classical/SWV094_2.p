@@ -1,0 +1,10 @@
+include('standard_preamble.ax').
+tff(predicate_0, type, hq: (general * general) > $o).
+tff(predicate_1, type, tq: (general * general) > $o).
+tff(predicate_2, type, hp: (general) > $o).
+tff(predicate_3, type, tp: (general) > $o).
+tff(formula_0_transition_axiom_0, axiom, ![X1_g: general, X2_g: general]: (hq(X1_g, X2_g) => tq(X1_g, X2_g))).
+tff(formula_1_transition_axiom_1, axiom, ![X1_g: general]: (hp(X1_g) => tp(X1_g))).
+tff(formula_2_right_0, axiom, ![V1_g: general, V2_g: general, X_g: general, Y_g: general]: (((((V1_g = X_g & V2_g = Y_g) & (?[Z_g: general]: (Z_g = X_g & hp(Z_g)) & ?[Z_g: general]: (Z_g = Y_g & hp(Z_g)))) & (~(~tq(V1_g, V2_g)))) => hq(V1_g, V2_g)) & ((((V1_g = X_g & V2_g = Y_g) & (?[Z_g: general]: (Z_g = X_g & tp(Z_g)) & ?[Z_g: general]: (Z_g = Y_g & tp(Z_g)))) & (~(~tq(V1_g, V2_g)))) => tq(V1_g, V2_g)))).
+tff(formula_3_right_1, axiom, ![X_g: general, Y_g: general, Z_g: general]: (((((((?[Z_g: general, Z1_g: general]: ((Z_g = X_g & Z1_g = Y_g) & hq(Z_g, Z1_g)) & ?[Z1_g: general, Z2_g: general]: ((Z1_g = Y_g & Z2_g = Z_g) & hq(Z1_g, Z2_g))) & ?[Z1_g: general, Z2_g: general]: ((Z1_g = X_g & Z2_g = Z_g) & (~tq(Z1_g, Z2_g)))) & ?[Z_g: general]: (Z_g = X_g & hp(Z_g))) & ?[Z_g: general]: (Z_g = Y_g & hp(Z_g))) & ?[Z1_g: general]: (Z1_g = Z_g & hp(Z1_g))) => $false) & ((((((?[Z_g: general, Z1_g: general]: ((Z_g = X_g & Z1_g = Y_g) & tq(Z_g, Z1_g)) & ?[Z1_g: general, Z2_g: general]: ((Z1_g = Y_g & Z2_g = Z_g) & tq(Z1_g, Z2_g))) & ?[Z1_g: general, Z2_g: general]: ((Z1_g = X_g & Z2_g = Z_g) & (~tq(Z1_g, Z2_g)))) & ?[Z_g: general]: (Z_g = X_g & tp(Z_g))) & ?[Z_g: general]: (Z_g = Y_g & tp(Z_g))) & ?[Z1_g: general]: (Z1_g = Z_g & tp(Z1_g))) => $false))).
+tff(formula_4_left_0, conjecture, ![V1_g: general, V2_g: general, X_g: general, Y_g: general]: (((((V1_g = X_g & V2_g = Y_g) & (?[Z_g: general]: (Z_g = X_g & hp(Z_g)) & ?[Z_g: general]: (Z_g = Y_g & hp(Z_g)))) & (~(~tq(V1_g, V2_g)))) => hq(V1_g, V2_g)) & ((((V1_g = X_g & V2_g = Y_g) & (?[Z_g: general]: (Z_g = X_g & tp(Z_g)) & ?[Z_g: general]: (Z_g = Y_g & tp(Z_g)))) & (~(~tq(V1_g, V2_g)))) => tq(V1_g, V2_g)))).

@@ -12,4 +12,5 @@ Each problem directory also contains the associated source files (logic programs
 ## Classical Reasoning
 If you want to test a classical first-order theorem prover on these problems, visit the `classical` directory. 
 Each `anthem` command produces a range of files corresponding to subproblems of the verification task (see summary.txt).
-Equivalence breaking was disabled universally, but simplified (problem variant 1) and unsimplified (problem variant 0) problems were generated.
+Equivalence breaking was disabled universally, and only unsimplified (problem variant 2) problems were generated.
+Problems with available proof outlines generated two sets of problem files: one where the outline was used, and one where it was excluded. 

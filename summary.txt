@@ -6,3 +6,67 @@
 
 ./anthem verify --equivalence external problems/coloring/coloring.{lp,spec,ug} --no-proof-search --save-problems classical/ --no-eq-break --problem-name SWV004 --no-simplify
     004 - 008
+
+./anthem verify --equivalence external problems/cover-p2p/cover-p2p.{1.lp,2.lp,ug} --no-proof-search --save-problems classical/ --no-eq-break --problem-name SWV009 --no-simplify
+    009 - 012
+
+./anthem verify --equivalence external problems/cover-p2s/cover-p2s.{lp,spec,ug} --no-proof-search --save-problems classical/ --no-eq-break --problem-name SWV013 --no-simplify
+    013 - 016
+
+./anthem verify --equivalence external problems/div/div.{lp,spec,ug,po} --no-proof-search --save-problems classical/ --no-eq-break --problem-name SWV017 --no-simplify --direction backward
+    017 - 022
+
+./anthem verify --equivalence strong problems/double/double.{1.lp,2.lp} --no-proof-search --save-problems classical/ --no-eq-break --problem-name SWV023 --no-simplify
+    023 - 024
+
+./anthem verify --equivalence external problems/floor/floor.{lp,spec,ug} --no-proof-search --save-problems classical/ --no-eq-break --problem-name SWV025 --no-simplify
+    025 - 026
+
+./anthem verify --equivalence external problems/frame/frame.{1.lp,2.lp,ug,po} --no-proof-search --save-problems classical/ --no-eq-break --problem-name SWV027 --no-simplify --bypass-tightness
+    027 - 032
+
+./anthem verify --equivalence strong problems/lin2/lin2.{1.lp,2.lp} --no-proof-search --save-problems classical/ --no-eq-break --problem-name SWV033 --no-simplify
+    033 - 035
+
+./anthem verify --equivalence external problems/more_than_three/more_than_three.{1.lp,2.lp,ug,po} --no-proof-search --save-problems classical/ --no-eq-break --problem-name SWV036 --no-simplify
+    036 - 053
+
+./anthem verify --equivalence external problems/optimized_primes/optimized_primes.{1.lp,2.lp,ug,po} --no-proof-search --save-problems classical/ --no-eq-break --problem-name SWV054 --no-simplify
+    055 - 065
+
+./anthem verify --equivalence external problems/placeholder_squares/placeholder_squares.{1.lp,2.lp,ug,po} --no-proof-search --save-problems classical/ --no-eq-break --problem-name SWV066 --no-simplify
+    066 - 069
+
+./anthem verify --equivalence external problems/primes/primes.{1.lp,2.lp,ug,po} --no-proof-search --save-problems classical/ --no-eq-break --problem-name SWV069 --no-simplify
+    070 - 072
+
+./anthem verify --equivalence strong problems/squares/squares.{1.lp,2.lp} --no-proof-search --save-problems classical/ --no-eq-break --problem-name SWV073 --no-simplify
+    073 - 074
+
+### Strong primes excluded
+
+./anthem verify --equivalence strong problems/successor/successor.{1.lp,2.lp} --no-proof-search --save-problems classical/ --no-eq-break --problem-name SWV075 --no-simplify
+   075 - 076
+
+### Tiling Example excluded
+
+./anthem verify --equivalence strong problems/trivial_primes/trivial_primes.{1.lp,2.lp} --no-proof-search --save-problems classical/ --no-eq-break --problem-name SWV077 --no-simplify
+   077 - 079
+
+./anthem verify --equivalence external problems/div/div.{lp,spec,ug} --no-proof-search --save-problems classical/ --no-eq-break --problem-name SWV079 --no-simplify --direction backward
+    080
+
+./anthem verify --equivalence external problems/frame/frame.{1.lp,2.lp,ug} --no-proof-search --save-problems classical/ --no-eq-break --problem-name SWV081 --no-simplify --bypass-tightness
+    081 - 084
+
+./anthem verify --equivalence external problems/more_than_three/more_than_three.{1.lp,2.lp,ug} --no-proof-search --save-problems classical/ --no-eq-break --problem-name SWV085 --no-simplify
+    085 - 086
+
+./anthem verify --equivalence external problems/optimized_primes/optimized_primes.{1.lp,2.lp,ug} --no-proof-search --save-problems classical/ --no-eq-break --problem-name SWV087 --no-simplify
+    087 - 088
+
+./anthem verify --equivalence external problems/placeholder_squares/placeholder_squares.{1.lp,2.lp,ug} --no-proof-search --save-problems classical/ --no-eq-break --problem-name SWV089 --no-simplify
+    089 - 090
+
+./anthem verify --equivalence external problems/primes/primes.{1.lp,2.lp,ug} --no-proof-search --save-problems classical/ --no-eq-break --problem-name SWV091 --no-simplify
+    091 - 092

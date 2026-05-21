@@ -1,0 +1,3 @@
+input: manAssignsScore/3.
+input: womanAssignsScore/3.
+output: match/2.
